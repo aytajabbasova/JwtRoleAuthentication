@@ -7,9 +7,7 @@ using Microsoft.EntityFrameworkCore;
 namespace JwtRoleAuthentication.Data;
 
 public class ApplicationDbContext : IdentityUserContext<ApplicationUser>
-{
-    public DbSet<Page> Pages => Set<Page>();
-    
+{    
     public ApplicationDbContext (DbContextOptions<ApplicationDbContext> options)
         : base(options)
     {
